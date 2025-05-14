@@ -1,0 +1,16 @@
+.plants {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20ch, 1fr));
+  gap: 1ch;
+}
+
+.plant {
+  border: 1px solid #eee;
+  list-style: none;
+  padding: 1rem;
+}
+
+.plant figure {
+  font-size: 5rem;
+  text-align: center;
+}
