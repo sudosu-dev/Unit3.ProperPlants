@@ -5,20 +5,13 @@ import PLANTS from "./data";
 
 export default function App() {
   const [cartList, setCartList] = useState([]);
-  const [selectedPlant, setSelectedPlant] = useState(null);
 
   return (
     <>
       <h1>Proper Plants</h1>
       <main>
-        <Plants
-          plants={PLANTS}
-          addToCart={addToCart}
-          setSelectedPlant={setSelectedPlant}
-        />
-        {/* {console.log(selectedPlant.name)} */}
+        <Plants plants={PLANTS} addToCart={addToCart} />
         <Cart
-          selectedPlant={selectedPlant}
           addToCart={addToCart}
           cartList={cartList}
           subtractFromCart={subtractFromCart}

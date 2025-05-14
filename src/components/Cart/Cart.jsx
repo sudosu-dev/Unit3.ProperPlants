@@ -1,11 +1,6 @@
 import "./Cart.css";
 
-export default function Cart({
-  selectedPlant,
-  addToCart,
-  cartList,
-  subtractFromCart,
-}) {
+export default function Cart({ addToCart, cartList, subtractFromCart }) {
   if (!cartList || cartList.length === 0) {
     return (
       <section className="cart">
